@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <dialog class="addModal">
+        
+        <form action="" class="addForm">
+    
+            <input type="text" name="inpName" placeholder="Name">
+            <select name="selectSt">
+                <option value="true">Active</option>
+                <option value="false">InActive</option>
+            </select>
+            <button>Save</button>
+            <button class="close">Close</button>
+        </form>
+    </dialog>
+
+    <dialog class="editModal">
+        
+        <form action="" class="editForm">
+    
+            <input type="text" name="editName" placeholder="Name">
+            <select name="editselectSt">
+                <option value="true">Active</option>
+                <option value="false">InActive</option>
+            </select>
+            <button>Save</button>
+            <button class="close" type="button">Close</button>
+        </form>
+    </dialog>
+    <button class="add">Add</button>
+    <div class="box">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>   
+                    <th>Status</th>
+                    <th>Active</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
